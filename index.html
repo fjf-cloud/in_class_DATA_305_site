@@ -3,10 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Fisher Finck | William & Mary Portfolio</title>
+    <style>
+        :root {
+            --wm-green: #115740;
+            --wm-gold: #b9975b;
+            --wm-silver: #d0d1d2;
+            --off-white: #fcfcfc;
+        }
+
+        body {
+            font-family: 'Georgia', serif; /* Classic academic feel */
+            margin: 0;
+            background-color: var(--off-white);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background-color: var(--wm-green);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--wm-gold);
+        }
+
+        h1 { margin: 0; font-size: 3.5rem; letter-spacing: -1px; }
+        .tagline { font-size: 1.4rem; color: var(--wm-gold); font-style: italic; }
+
+        .container { max-width: 850px; margin: 40px auto; padding: 20px; }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--wm-green);
+            border-left: 4px solid var(--wm-gold);
+            padding-left: 15px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 1px solid var(--wm-silver);
+        }
+
+        .date { color: var(--wm-gold); font-weight: bold; font-size: 0.9rem; }
+
+        .philanthropy-card {
+            background: linear-gradient(135deg, var(--wm-green), #0a3a2b);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--wm-gold);
+            color: var(--wm-green);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 15px;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #777; }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML webpage.</p>
+
+    <section class="hero">
+        <h1>Fisher Finck</h1>
+        <p class="tagline">William & Mary • Class of 2026</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="section">
+            <h2>Education & Roots</h2>
+            <div class="timeline-item">
+                <span class="date">Present</span>
+                <h3>The College of William & Mary</h3>
+                <p>Pursuing undergraduate studies at the nation’s second-oldest institution of higher learning. Member of the W&M community focused on academic excellence and campus leadership.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">Goochland, VA</span>
+                <h3>Goochland County Schools</h3>
+                <p>Lifelong resident of Goochland. Early recognitions include the <strong>Invention Convention Excellence Award</strong> for creative problem solving and community engagement.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Service & Impact</h2>
+            <p>Committed to giving back through student-led movements that support the next generation.</p>
+            <div class="philanthropy-card">
+                <h3>Miracle Network Dance Marathon</h3>
+                <p>Actively raising funds for <strong>Children's Miracle Network Hospitals</strong>. Every dollar raised stays local to provide life-saving care and support for families in need.</p>
+                <a href="https://events.dancemarathon.com/participant/1140225/" class="btn">Support My Campaign</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Interests</h2>
+            <p>From innovation in Goochland to the historic halls of Williamsburg, I am passionate about the intersection of history, community service, and modern innovation.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Fisher Finck • Williamsburg, Virginia • Goochland Proud
+    </footer>
+
 </body>
 </html>
